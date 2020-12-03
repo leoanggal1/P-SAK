@@ -1,0 +1,12 @@
+version: '2'
+services:
+  hsak:
+    container_name: hsak
+    volumes: 
+      - ./script:/app/script
+    build:
+      context: .
+volumes:
+  script:
+    driver: local
+
