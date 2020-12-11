@@ -25,9 +25,6 @@ if [[ "${NIKTO_INSTALL}" = "yes" && "$1" = "nikto" ]]; then
     echo "** Starting Nikto **"
     perl /app/nikto/program/nikto.pl
 fi
-if [[ "${W3AF_INSTALL}" = "no" && "$1" =~ "w3af" ]]; then
-    echo "** Enviroment variable W3AF_INSTALL = NO. Not installed W3AF **"
-fi
 if [[ "${HYDRA_INSTALL}" = "yes" && "$1" =~ "hydra" ]]; then
     echo "** Starting" $1 " **"
     exec "$@"
@@ -41,5 +38,5 @@ if [[ "$1" = "" ]]; then
     exec "/bin/bash"
 fi
 echo "** Starting P-SAK"
-echo "[bash | nmap | john | msf | commix | reconspider | tcpdump | sqlmap | nikto | hydra | aircraCk-ng]"
+echo "[bash | nmap | john | msf | commix | reconspider | tcpdump | sqlmap | nikto | hydra | aircrack-ng]"
 exec "$@"
