@@ -53,10 +53,10 @@ Do you want to have a conversation in private?
 Found this project useful? You can donate BTC or Ethereum.
 
 For donate BTC : **39n4G7byFu5XWrmXfdAirDoWLR8mbtwhoD**
-![Donate-BTC](/images/Donate-BTC.png)
+![Donate-BTC](images/Donate-BTC.PNG)
 
 For donate ETH: **0x02118C3bAB339e63a8A3CAdd47dfFD28648F429B**
-![Donate-ETH](/images/Donate-ETH.png)
+![Donate-ETH](images/Donate-ETH.PNG)
 
 ### Installation
 Dillinger uses a number of open source projects to work properly:
