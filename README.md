@@ -6,7 +6,7 @@
 Pentesting Swiss Army Knife (P-SAK) is a Docker Image with the **11 ( 4 optional )** most used tools for Hacking and Pentesting.
 
 ## What is P-SAK
-P-SAK is a suite of tools for Hacking and Pentesting. It has been developed using the [bitnami-docker-python](https://github.com/bitnami/bitnami-docker-python)as the base image and installing the following tools:
+P-SAK is a suite of tools for Hacking and Pentesting. It has been developed using the [bitnami-docker-python](https://github.com/bitnami/bitnami-docker-python) as the base image and installing the following tools:
 * [NMAP](https://nmap.org/) - Utility for network , ports and services discovery in addition to security auditing.
 * [Metasploit](https://github.com/rapid7/metasploit-framework) - Most used penetration testing framework.
 * [Commix](https://github.com/commixproject/commix) - Automated tool to test web-based applications with the view to find  vulnerabilities related to command injection.
