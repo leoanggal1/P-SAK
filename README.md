@@ -1,6 +1,6 @@
 # Pentesting Swiss Army Knife (P-SAK)
 <p align="center">
-![PortScan](images/Logo.png)
+<img src="images/Logo.png" />
 </p>
 
 ## What is P-SAK?
@@ -74,7 +74,7 @@ $ docker run -ti psak:0.0.1 nmap -sV --min-rate 5000 10.10.10.196
 ```
 The output obtained:
 <p align="center">
-![PortScan](images/Eg-PortScan.PNG)
+<img src="images/Eg-PortScan.PNG" />
 </p>
 
 ## Contributing
@@ -94,6 +94,6 @@ Found this project useful? If you want, you might donate.
 
 * For donate BTC : **39n4G7byFu5XWrmXfdAirDoWLR8mbtwhoD**
 <p align="center">
-![Donate-BTC](images/Donate-BTC.PNG)
+<img src="images/Donate-BTC.PNG" />
 </p>
 
