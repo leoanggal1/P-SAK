@@ -4,7 +4,7 @@
 </p>
 
 ## What is P-SAK?
-Pentesting Swiss Army Knife (P-SAK) is a Docker Image with the **eleven ** ( four optional ) most used tools for Hacking and Pentesting. It allow you to use these tools easily and quickly on your Pentest from any S.O. with Docker Engine support. It has been developed using [bitnami-docker-python](https://github.com/bitnami/bitnami-docker-python) as the base image and installing the following tools:
+Pentesting Swiss Army Knife (P-SAK) is a Docker Image with the **eleven** ( four optional ) most used tools for Hacking and Pentesting. It allow you to use these tools easily and quickly on your Pentest from any S.O. with Docker Engine support. It has been developed using [bitnami-docker-python](https://github.com/bitnami/bitnami-docker-python) as the base image and installing the following tools:
 * [NMAP](https://nmap.org/) - Utility for network , ports and services discovery in addition to security auditing.
 * [Metasploit](https://github.com/rapid7/metasploit-framework) - Most used penetration testing framework.
 * [Commix](https://github.com/commixproject/commix) - Automated tool to test web-based applications with the view to find  vulnerabilities related to command injection.
@@ -39,7 +39,7 @@ You can build the image with others optionals tool using  the environment variab
 | Aircrack-ng | AIRCRACK_INSTALL | no |
 
 To enable these tools you have to change default value of environment variables to `yes`.
-For example if you need Aircrack-ng and Nikto for you Pentest you have to change the `Dockerfile` like this:
+For example, if you need Aircrack-ng and Nikto for you Pentest you have to change the `Dockerfile` like this:
  ```
  ENV SQLMAP_INSTALL="no" \
 	NIKTO_INSTALL="yes" \
@@ -66,9 +66,9 @@ $ docker run -ti psak:0.0.1 bash
 #### Only a tool
 For those moments you only need run one P-SAK tool, you can use the command:
 ``` 
-$ docker run -ti psak:0.0.1 **tool_name tool_option**
+$ docker run -ti psak:0.0.1 tool_name tool_options
 ```
-For example to run a port scan using NMAP only, we use the following command:
+For example, to run a port scan using NMAP only, we use the following command:
 ```
 $ docker run -ti psak:0.0.1 nmap -sV --min-rate 5000 10.10.10.196
 ```
