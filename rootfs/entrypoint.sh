@@ -15,9 +15,8 @@ if [[ "$1" = "nmap" ||  "$1" = "john" || "$1" =~ "msf" || "$1" = "commix" || "$1
 fi
 if [[ "$1" = "reconspider" ]]; then
     echo "** Starting" $1 " **"
-    exec "python /app/reconspider/reconspider.py"
+    python /app/reconspider/reconspider.py
 fi
-
 ## Run P-SAK extra tools
 if [[ "${SQLMAP_INSTALL}" = "no" && "$1" = "sqlmap" ]]; then
     echo "** Enviroment variable SQLMAP_INSTALL = no. Not installed SQLMAP **"
@@ -46,10 +45,6 @@ if [[ "${AIRCRACK_INSTALL}" = "yes" && "$1" =~ "aircrack" ]]; then
 fi
 if [[ "${AIRCRACK_INSTALL}" = "no" && "$1" =~ "aircrack" ]]; then
     echo "** Enviroment variable AIRCRACK_INSTALL = no. Not installed AIRCRACK-NG **"
-fi
-if [[ "$1" = "" ]]; then
-    echo "** Starting P-SAK **"
-    exec "/bin/bash"
 fi
 
 echo "** Starting P-SAK"

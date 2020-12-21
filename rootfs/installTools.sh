@@ -3,22 +3,27 @@
 set -o errexit
 set -o nounset
 set -o pipefail
+cd /app
 
 # Install wfuzz
 git clone https://github.com/xmendez/wfuzz.git && cd wfuzz
 python3 setup.py install
+cd -
 
 # Install commix
 git clone https://github.com/commixproject/commix.git commix && cd commix
 python3 commix.py --install
+cd -
 
 # Install reconspider
 git clone https://github.com/bhavsec/reconspider.git && cd reconspider
 python3 setup.py install
+cd -
 
 # Install msfinstall
 curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall
-chmod 755 msfinstall && ./msfinstall
+chmod 755 msfinstall
+./msfinstall
 apt-get upgrade
 
 # Nikto installation
