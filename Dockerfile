@@ -10,7 +10,7 @@ ENV SQLMAP_INSTALL="no" \
     AIRCRACK_INSTALL="no"
 
 
-RUN rm -rf /var/lib/apt/lists /var/cache/apt/archives /app/wfuzz
+RUN rm -rf /var/lib/apt/lists /var/cache/apt/archives
 
 COPY rootfs /
 

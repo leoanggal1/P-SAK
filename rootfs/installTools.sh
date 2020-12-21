@@ -9,6 +9,7 @@ cd /app
 git clone https://github.com/xmendez/wfuzz.git && cd wfuzz
 python3 setup.py install
 cd -
+rm -rf /app/wfuzz
 
 # Install commix
 git clone https://github.com/commixproject/commix.git commix && cd commix
@@ -17,6 +18,7 @@ cd -
 
 # Install reconspider
 git clone https://github.com/bhavsec/reconspider.git && cd reconspider
+pip install whois beautifulsoup4 click gmplot h8mail IP2proxy lxml nmap paramiko pillow prompt_toolkit pythonping requests shodan urllib3
 python3 setup.py install
 cd -
 
