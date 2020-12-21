@@ -11,7 +11,7 @@ Pentesting Swiss Army Knife (P-SAK) is a Docker Image with the **eleven** ( four
 * [Metasploit](https://github.com/rapid7/metasploit-framework) - Most used penetration testing framework.
 * [Commix](https://github.com/commixproject/commix) - Automated tool to test web-based applications with the view to find vulnerabilities related to command injection.
 * [Reconspider](https://github.com/bhavsec/reconspider) - OSINT Framework for scanning IP Address, Emails, Websites, Organizations and find out information from different sources.
-* [Wfuzz](https://github.com/xmendez/wfuzz)- It replaces any web reference to the FUZZ keyword by the value of a given payload.
+* [Wfuzz](https://github.com/xmendez/wfuzz) - It replaces any web reference to the FUZZ keyword by the value of a given payload.
 * [John the Ripper](https://www.openwall.com/john/) - Password cracking software tool.
 * [Tcpdump](https://www.tcpdump.org/manpages/tcpdump.1.html) - Data-network packet analyzer
 
@@ -58,7 +58,7 @@ P-SAK has been developed to be a **non-root** image, following security best pra
 If you need root privileges execute the image like the following:
 
 ```console
-docker run --user 0 <image-tag>
+$ docker run --user 0 <image-tag>
 ```
 
 ## Usage
@@ -109,7 +109,11 @@ Want to contribute? Great!! You can request new features or create PR, we love c
 
 Found this project useful? If you want, you might donate.
 
-* For donate BTC : **39n4G7byFu5XWrmXfdAirDoWLR8mbtwhoD**
+* For donate BTC : **12DuuMYdEHpANfWRZMxKcswftSuEpTj8Em**
 <p align="center">
 <img src="images/Donate-BTC.PNG" />
+</p>
+* For donate ETH : **0x23d1d8ccf69d4d634d25aaf01fe409f1ac4a7bce**
+<p align="center">
+<img src="images/Donate-ETH.PNG" />
 </p>
